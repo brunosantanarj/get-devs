@@ -1,0 +1,28 @@
+.header {
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+    border-bottom: 4px solid $amarelo;
+
+    .header-carrinho {
+        @include flex(flex-end);
+        position: relative;
+        height: 60px;
+        background: {
+            image: url('../images/bag.png');
+            position: center right 15px;
+            repeat: no-repeat;
+        }
+
+        .header-carrinhho--unit {
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            bottom: 5px;
+            text-align: center;
+            @include border-radius(50%);            
+            @include flex(center);
+        }
+    }
+}

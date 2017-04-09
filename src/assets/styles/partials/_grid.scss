@@ -1,0 +1,22 @@
+$margin-col: 15px;
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin col($col-num) {
+    width: -webkit-calc((100% * #{$col-num}) /12 - (#{$margin-col }* 2));
+    width:    -moz-calc((100% *  #{$col-num}) /12 - calc(#{$margin-col } * 2));
+    width:         calc((100% *  #{$col-num}) /12 - calc(#{$margin-col } * 2));
+    margin: {
+        left: $margin-col;
+        right: $margin-col;
+    } 
+    box-sizing: border-box;
+    float:left;
+}

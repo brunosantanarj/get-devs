@@ -1,0 +1,55 @@
+//Variáveis
+$amarelo: #ff9f1c;
+$preto: #000;
+$escuro: #010101;
+$cinza: #666;
+
+$tablet: 'screen and (min-width: 768px)';
+$desktop: 'screen and (min-width: 992px)';
+
+//mixins
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+@mixin flex($position) {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: $position;
+    -ms-flex-align: $position;
+    align-items: $position;
+    -webkit-justify-content: $position;
+    -ms-flex-pack: $position;
+    justify-content: $position;
+}
+
+.wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bg-yellow {
+    background-color: $amarelo;
+}
+
+.white {
+    color: #fff;
+}
+
+.preto-claro {
+    color: $escuro;
+}
+
+.btn-title {
+    font-family: 'Open Sans';
+    color: $cinza;
+    border: 1px solid;
+    @include flex(center);
+    justify-content: center;
+    font-size: 1.175em;
+    padding: {
+        top: 15px;
+        bottom: 15px;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "teste-profite",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "react-scripts": "0.9.5"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "foundation": "^4.2.1-1",
+    "react": "^15.5.1",
+    "react-dom": "^15.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

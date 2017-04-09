@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Bell';
+  src: url(../fonts/Bell-Centennial-Std-Address_6527.ttf);
+  src: local('../fonts/Bell-Centennial-Std-Address_6527.ttf'), url('../fonts/Bell-Centennial-Std-Address_6527.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BellBold';
+  src: url(../fonts/Bell-Centennial-Std-Bold-Listing_6528.ttf);
+  src: local('../fonts/Bell-Centennial-Std-Bold-Listing_6528.ttf'), url('../fonts/Bell-Centennial-Std-Bold-Listing_6528.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+

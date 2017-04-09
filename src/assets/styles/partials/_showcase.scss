@@ -1,0 +1,158 @@
+.title-feature {
+    font-size: 2.5em;
+    text-align: center;
+    padding: {
+        top: 2rem;
+        bottom: 1rem;
+    }
+}
+
+.filtrar {
+    padding-right: 0;
+}
+
+.ordenar {
+    padding-left: 0;
+}    
+
+.mobile-fixed {
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .mobile-fixed--title {
+        font-size: 2em;
+        color: $cinza;
+        border-bottom: 1px solid;
+        line-height: 1;
+        padding: {
+            top: 25px;
+            bottom: 15px;
+            left: 10px;
+            right: 10px;
+        }
+
+        .mobile-fixed_close {
+            float: right;
+
+            &:before {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                display: block;
+                content: '';
+                background: {
+                    image: url(../images/close.png);
+                    repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    .mobile-fixed--ul {
+        list-style: none;
+        margin: {
+            left: 15px;
+            top: 30px;
+        }
+
+        .mobile-fixed--li {
+            color: $preto;
+            font-size: 1.5em;
+            font-family: "Open Sans";
+            margin: {
+                bottom: 1.4em;
+            }
+        } 
+    }
+
+    &.filtrar-box {
+
+        .mobile-fixed--ul {
+
+            .mobile-fixed--li {
+                position: relative;
+                
+                &:after {
+                    position: absolute;
+                    right: 0;
+                    top: 8px;
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                    float: right;
+                    margin-right: 10px;
+                    background: {
+                        image: url(../images/more.png);
+                        repeat: no-repeat;
+                    }
+                }
+
+                .mobile-fixed--sub {
+                    list-style: none;
+
+                    .checkbox {
+                        width: 30px;
+                        height: 30px;
+                        position: relative;
+                        border: 1px solid $cinza;
+                        display: inline-block;
+                        top: 5px;
+                        margin: {
+                            top: 20px;
+                            bottom: 20px;
+                            right: 15px;
+                        }
+                        label {
+                            width: 26px;
+                            height: 26px;
+                            position: absolute;
+                            top: 4px;
+                            left: 4px;
+                            cursor: pointer;
+                            
+                            &:after {
+                            content: '';
+                            width: 21px;
+                            height: 21px;
+                            position: absolute;
+                            background: $amarelo;
+                            opacity: 0;
+                            left: -8px;
+                            top: -1px;
+                            }
+                        }
+                        input[type=checkbox] {
+                            visibility: hidden;
+                            &:checked + label:after {
+                                opacity: 1;
+                            }   
+                        } 
+                    }
+                }
+
+                .submenu-quadrado {
+                    list-style: none;
+                    @include flex(flex-start);
+                    flex-wrap: wrap;
+
+                    .submenu-quadrado--li {
+                        color: $cinza;
+                        float: left;
+                        width: 70px;
+                        height: 70px;
+                        border: 1px solid;
+                        @include flex(center);
+                        margin: {
+                            top: 15px;
+                            left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

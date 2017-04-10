@@ -1,0 +1,16 @@
+.product {
+
+    .product-box {
+        margin-top: 20px;
+        text-align: center;
+
+        .product-box--prodInfo {
+            text-align: right;
+            float: left;
+        }
+
+        .product-box--button {
+            float: right;
+        }
+    }
+}

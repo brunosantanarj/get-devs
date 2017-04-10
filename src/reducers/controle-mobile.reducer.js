@@ -1,16 +1,28 @@
 const initialState = {}
 export default (state = initialState, action) => {
     switch(action.type) {
-        case 'OPEN': {
+        case 'OPEN_ORDENAR': {
             return {
                 ...state,
-                ctrlMobileShow: action.payload
+                ctrlMobileShow_ordena: action.payload
             }
         }
-        case 'CLOSE': {
+        case 'CLOSE_ORDENAR': {
             return {
                 ...state,
-                ctrlMobileShow: action.payload
+                ctrlMobileShow_ordena: action.payload
+            }
+        }
+        case 'OPEN_FILTRAR': {
+            return {
+                ...state,
+                ctrlMobileShow_filtrar: action.payload
+            }
+        }
+        case 'CLOSE_FILTRAR': {
+            return {
+                ...state,
+                ctrlMobileShow_filtrar: action.payload
             }
         }
         default: {

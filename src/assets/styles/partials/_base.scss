@@ -25,8 +25,11 @@ $desktop: 'screen and (min-width: 992px)';
 }
 
 .wrapper {
-    margin-left: 15px;
-    margin-right: 15px;
+
+    @media screen and (min-width:340px) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 .bg-yellow {
@@ -37,19 +40,25 @@ $desktop: 'screen and (min-width: 992px)';
     color: #fff;
 }
 
+.cinza {
+    color: $cinza;
+}
+
 .preto-claro {
     color: $escuro;
 }
 
-.btn-title {
+.font-default {
+    font-family: 'Bell';
+}
+
+.font-bold {
+    font-family: 'BellBold';
+}
+
+.buttons {
     font-family: 'Open Sans';
-    color: $cinza;
-    border: 1px solid;
-    @include flex(center);
-    justify-content: center;
     font-size: 1.175em;
-    padding: {
-        top: 15px;
-        bottom: 15px;
-    }
+    justify-content: center;
+    @include flex(center);
 }

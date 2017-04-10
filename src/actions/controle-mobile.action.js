@@ -1,13 +1,27 @@
-export const open = () => {
+export const openOrdenar = () => {
     return dispatch => dispatch({
-        type: 'OPEN',
+        type: 'OPEN_ORDENAR',
         payload: true
     })
 }
 
-export const close = () => {
+export const closeOrdenar = () => {
     return dispatch => dispatch({
-        type: 'CLOSE',
+        type: 'CLOSE_ORDENAR',
+        payload: false
+    })
+}
+
+export const openFiltrar = () => {
+    return dispatch => dispatch({
+        type: 'OPEN_FILTRAR',
+        payload: true
+    })
+}
+
+export const closeFiltrar = () => {
+    return dispatch => dispatch({
+        type: 'CLOSE_FILTRAR',
         payload: false
     })
 }

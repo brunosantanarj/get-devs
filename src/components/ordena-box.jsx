@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { close } from '../actions/controle-mobile.action';
+import { closeOrdenar } from '../actions/controle-mobile.action';
 
 class OrdenaBox extends Component {
     render() {
@@ -10,7 +10,7 @@ class OrdenaBox extends Component {
                 <div className="mobile-fixed--title">
                     ORDENAR
                     <span className="mobile-fixed_close"
-                    onClick={() => this.props.close()}></span>
+                    onClick={() => this.props.closeOrdenar()}></span>
                 </div>
                 <ul className="mobile-fixed--ul">
                     <li className="mobile-fixed--li">Mais recentes</li>
@@ -26,5 +26,5 @@ const mapStateToProps = state => ({
   ordena: state.mobileShow, 
 });
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ close }, dispatch);
+  bindActionCreators({ closeOrdenar }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(OrdenaBox)

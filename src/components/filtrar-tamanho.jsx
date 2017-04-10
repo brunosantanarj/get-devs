@@ -19,12 +19,18 @@ class FiltrarTamanho extends Component {
             ]
         }
     }
+    
+    ChoiceTamanho(e){
+        //método que seleciona o tamanho para filtragem
+        e.target.className += ' submenu-quadrado--li_active';
+    }
+    
     render() {
         return (
             <ul className="submenu-quadrado">
                 {
                     this.state.tamanhos.map(e => 
-                        <li key={e.tamanho} id={e.tamanho} className="submenu-quadrado--li">{e.tamanho}</li>
+                        <li key={e.tamanho} id={e.tamanho} className="submenu-quadrado--li" onClick={e => this.ChoiceTamanho(e)}>{e.tamanho}</li>
                     )
                 }
             </ul>

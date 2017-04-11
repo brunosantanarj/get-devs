@@ -1,0 +1,16 @@
+.footer {
+    background-color: $preto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+
+    .footer-paragraph {
+        color: $cinza;
+        margin:0 auto 3px;
+        line-height: 1;
+    }
+}

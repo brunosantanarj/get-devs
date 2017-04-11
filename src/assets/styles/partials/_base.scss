@@ -57,8 +57,7 @@ $desktop: 'screen and (min-width: 992px)';
 }
 
 .buttons {
-    font-family: 'Open Sans';
-    font-size: 1.175em;
+    font-size: 1.5em;
     justify-content: center;
     @include flex(center);
 }

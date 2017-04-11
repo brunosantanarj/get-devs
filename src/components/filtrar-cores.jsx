@@ -23,7 +23,7 @@ class FiltrarCores extends Component {
             <form>
                 <ul className="mobile-fixed--sub">
                     {
-                        this.state.cores.map(e => 
+                        this.state.cores.map(e =>
                             <li key={e.cor}>
                                 <div className="checkbox">
                                     <input type="checkbox" value={e.cor} id={e.cor}/>

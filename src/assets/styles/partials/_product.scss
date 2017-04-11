@@ -4,13 +4,60 @@
         margin-top: 20px;
         text-align: center;
 
+        @media (max-width: 400px) and (min-width: 340px){
+            &:nth-child(even) {
+                padding-right: 0;
+            }
+
+            &:nth-child(odd) {
+                padding-left: 0;
+            }
+        }
+
+        .product-box--prodtitle {
+            font-size: 1.175em;
+            line-height: 1.1;
+            height: 2.4em;
+            margin-top: 1.5em;
+        }
+
         .product-box--prodInfo {
             text-align: right;
             float: left;
+
+            .product-box--prodInfo_preco {
+                margin-bottom: 0;
+                line-height: 1;
+            }
+
+            .product-box--prodInfo_parcelas  {
+                font-size: 1em;
+            }
         }
 
         .product-box--button {
             float: right;
+            width: 55px;
+            height: 40px;
+            cursor: pointer;
+            margin-top: -4px;
+            background: {
+                image: url(../images/carrinho.png);
+                repeat: no-repeat;
+                position: center center;
+            }
+
+            @media (max-width: 330px) {
+                width: 30px;
+                height: 36px;
+                margin-top: -2px;
+            }
+
+            @media (max-width: 380px) and (min-width: 330px) {
+                width: 42px;
+                height: 40px;
+                margin-top: -3px;
+            }
         }
     }
 }
